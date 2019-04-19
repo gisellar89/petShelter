@@ -24,55 +24,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type='text/javascript'>
-        $(document).ready(function(){ 
-            $(window).scroll(function(){ 
-                if ($(this).scrollTop() > 100) { 
-                    $('#scroll').fadeIn(); 
-                } else { 
-                    $('#scroll').fadeOut(); 
-                } 
-            }); 
-            $('#scroll').click(function(){ 
-                $("html, body").animate({ scrollTop: 0 }, 600); 
-                return false; 
-            }); 
-        });
-        </script>
-        <style type="text/css">
-        /* BackToTop button css */
-        #scroll {
-            position:fixed;
-            right:10px;
-            bottom:10px;
-            cursor:pointer;
-            width:50px;
-            height:50px;
-            background-color:#3498db;
-            text-indent:-9999px;
-            display:none;
-            -webkit-border-radius:60px;
-            -moz-border-radius:60px;
-            border-radius:60px
-        }
-        #scroll span {
-            position:absolute;
-            top:50%;
-            left:50%;
-            margin-left:-8px;
-            margin-top:-12px;
-            height:0;
-            width:0;
-            border:8px solid transparent;
-            border-bottom-color:#ffffff
-        }
-        #scroll:hover {
-            background-color:#e74c3c;
-            opacity:1;filter:"alpha(opacity=100)";
-            -ms-filter:"alpha(opacity=100)";
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>        
 </head>
 
 <body>
@@ -159,19 +111,23 @@
                                 
                             </div>
                         </div>
-                        <div class="row justify-content-center">
+                        <div class="row">
                                 <div class="col-md-4">
                                     <div class="featured-btn-wrap">
-                                        <a href="#" class="btn btn-danger">Adoptar</a>
+                                        
+                                        <a href="#" class="btn btn-danger">¿Quieres adoptar una mascota?</a>
                                     </div>
                                 </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-md-4">
+                                <div class ="col-md-4"></div>
+                                <div class="col-md-4">
+
                                 <div class="featured-btn-wrap">
-                                    <a href="#" class="btn btn-danger">Historias Felices</a>
+                                    <a href="#" class="btn btn-danger">Conoce nuestros casos de Exito!!</a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row reserve-seat-block">
+                            
                         </div>
                     </div>
                 </div>
@@ -181,40 +137,40 @@
     <!--// SLIDER -->
     <!--//END HEADER -->
 
-    <!--============================= ADD LISTING =============================-->
+    <!--============================= QUIENES SOMOS =============================-->
     <section class="main-block light-bg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="add-listing-wrap">
                             <h2>Quienes somos</h2>
-                            <p>Add your Business infront of millions and earn 3x profits from our listing</p>
+                            <p>No somos un refugio ni grupo de rescate. Difundimos adopciones y concientizamos sobre esterilizacion, adopción y tenencia responsable.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-4">
                         <div class="featured-btn-wrap">
-                            <a href="#" class="btn btn-danger"><span class="ti-plus"></span> ADD LISTING</a>
+                            <a href="#" class="btn btn-danger"><span class="ti-plus"></span> Preguntas Frecuentes</a>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
-        <!--//END ADD LISTING -->
+        <!--//END QUIENES SOMOS -->
 
-    <!--============================= FIND PLACES =============================-->
+    <!--============================= NUESTROS GATITOS=============================-->
     <section class="main-block">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-5">
                     <div class="styled-heading">
-                        <h3>Conoce nuestros gatitos</h3>
+                        <h3>Conoce nuestros gatitos en busca de un hogar</h3>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="find-place-img_wrap">
                         <div class="grid">
                             <figure class="effect-ruby">
@@ -227,7 +183,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                
+                <div class="col-md-6">
+                    <div class="row find-img-align">
+                        <div class="col-md-12">
+                            <div class="find-place-img_wrap">
+                                <div class="grid">
+                                    <figure class="effect-ruby">
+                                        <img src="images/find-place4.jpg" class="img-fluid" alt="img13" />
+                                        <figcaption>
+                                            <h5>Cambio de Hogar </h5>
+                                            <p>30 Necesidad de cambio</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-block">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <div class="styled-heading">
+                        <h3>Conoce nuestros gatitos en difusión</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-6">
                     <div class="row find-img-align">
                         <div class="col-md-12">
                             <div class="find-place-img_wrap">
@@ -248,6 +237,24 @@
                             <div class="find-place-img_wrap">
                                 <div class="grid">
                                     <figure class="effect-ruby">
+                                        <img src="images/find-place5.jpg" class="img-fluid" alt="img13" />
+                                        <figcaption>
+                                            <h5>Vistos</h5>
+                                            <p>79 vistos</p>
+                                        </figcaption>
+                                    </figure>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="find-place-img_wrap">
+                                <div class="grid">
+                                    <figure class="effect-ruby">
                                         <img src="images/find-place3.jpg" class="img-fluid" alt="img13" />
                                         <figcaption>
                                             <h5>Encontrados </h5>
@@ -259,42 +266,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="row find-img-align">
-                        <div class="col-md-12">
-                            <div class="find-place-img_wrap">
-                                <div class="grid">
-                                    <figure class="effect-ruby">
-                                        <img src="images/find-place4.jpg" class="img-fluid" alt="img13" />
-                                        <figcaption>
-                                            <h5>Cambio de Hogar </h5>
-                                            <p>30 Necesidad de cambio</p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="find-place-img_wrap">
-                                <div class="grid">
-                                    <figure class="effect-ruby">
-                                        <img src="images/find-place5.jpg" class="img-fluid" alt="img13" />
-                                        <figcaption>
-                                            <h5>Vistos</h5>
-                                            <p>79 vistos</p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
             </div>
         </div>
     </section>
-    <!--//END FIND PLACES -->
+    <!--//NUESTROS GATITOS -->
     <!--============================= FEATURED PLACES =============================-->
  <!--   <section class="main-block light-bg">
         <div class="container">
@@ -636,6 +612,55 @@
             };
         });
     </script>
+
+    <script type='text/javascript'>
+        $(document).ready(function(){ 
+            $(window).scroll(function(){ 
+                if ($(this).scrollTop() > 100) { 
+                    $('#scroll').fadeIn(); 
+                } else { 
+                    $('#scroll').fadeOut(); 
+                } 
+            }); 
+            $('#scroll').click(function(){ 
+                $("html, body").animate({ scrollTop: 0 }, 600); 
+                return false; 
+            }); 
+        });
+        </script>
+        <style type="text/css">
+        /* BackToTop button css */
+        #scroll {
+            position:fixed;
+            right:10px;
+            bottom:10px;
+            cursor:pointer;
+            width:50px;
+            height:50px;
+            background-color:#3498db;
+            text-indent:-9999px;
+            display:none;
+            -webkit-border-radius:60px;
+            -moz-border-radius:60px;
+            border-radius:60px
+        }
+        #scroll span {
+            position:absolute;
+            top:50%;
+            left:50%;
+            margin-left:-8px;
+            margin-top:-12px;
+            height:0;
+            width:0;
+            border:8px solid transparent;
+            border-bottom-color:#ffffff
+        }
+        #scroll:hover {
+            background-color:#e74c3c;
+            opacity:1;filter:"alpha(opacity=100)";
+            -ms-filter:"alpha(opacity=100)";
+        }
+    </style>
 </body>
 
 </html>
